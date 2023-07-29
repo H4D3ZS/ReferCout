@@ -9,13 +9,19 @@ const Widget = ({ type }) => {
   let data;
 
   //temporary
-  const amount = 100;
+  const cout ={
+     big: 126,
+     small: 76
+  }
+
+
+
   const diff = 20;
 
   switch (type) {
     case "user":
       data = {
-        title: "USERS",
+        title: "Employees parti..",
         isMoney: false,
         link: "See all users",
         icon: (
@@ -31,7 +37,7 @@ const Widget = ({ type }) => {
       break;
     case "order":
       data = {
-        title: "ORDERS",
+        title: "Referrals submission",
         isMoney: false,
         link: "View all orders",
         icon: (
@@ -47,7 +53,7 @@ const Widget = ({ type }) => {
       break;
     case "earning":
       data = {
-        title: "EARNINGS",
+        title: "Hires generated",
         isMoney: true,
         link: "View net earnings",
         icon: (
@@ -60,7 +66,7 @@ const Widget = ({ type }) => {
       break;
     case "balance":
       data = {
-        title: "BALANCE",
+        title: "Payout Generated",
         isMoney: true,
         link: "See details",
         icon: (
@@ -78,12 +84,20 @@ const Widget = ({ type }) => {
       break;
   }
 
+  const valueToDisplay = type === "order" ? cout.small : cout.big;
+
   return (
     <div className="widget">
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">
-          {data.isMoney && "$"} {amount}
+        {/* {data.isMoney && "$"} {cout.join(", ")} */}
+
+
+
+        {valueToDisplay}
+
+
         </span>
         <span className="link">{data.link}</span>
       </div>
