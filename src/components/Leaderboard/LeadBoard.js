@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './lead_style.module.scss';
 import  Avatar from '../../images/person.svg';
+import AvatarWithName from './AvatarWithName';
 
 const leaderboardData = [
   { rank: 1,  Avatar,    name: 'Kirsty Medina', scoutPoints: 20201 },
@@ -16,13 +17,29 @@ const leaderboardData = [
 //   return initials.join('');
 // };
 
+
+//Refactor my codebase
+// 1. Create a new component called Leaderboard
+// 2. Move the leaderboard table into the new component
+// 3. Import the new component into App.js
+// 4. Render the new component in App.js
+
+
+
+
+
+ 
 const Leaderboard = () => {
   return (
-    <div>
+    <div style={{width: '374.66px', height: '2225px'}}>
       <div className={styles['Leaderboard-Title']}>
         <h4>Leaderboard</h4>
       </div>
 
+      <AvatarWithName
+        avatarSrc="https://example.com/avatar.jpg" // Replace with the actual avatar image URL
+        name="John Doe"
+      />
       <table className="w-full">
          
         <thead>
@@ -32,12 +49,9 @@ const Leaderboard = () => {
 
         
 
-            <th className="py-2">Rank </th>  <span/>
-           
-            
-           <th className="py-2">Avatar </th> <span/>
+            <th className="py-2"><span>Rank</span></th>  
 
-           <th className="py-2">Name </th>  <span/>  
+           <th className="py-2"><span>Name</span></th>    
 
            <th className="py-2 text-right">Scout Points</th> 
 
@@ -62,22 +76,21 @@ const Leaderboard = () => {
               </td>
 
               <td className="py-2">
-                <div className="w-8 h-8 bg-blue-500 text-white font-bold text-center rounded-full">
-                  {/* {getInitials(player.name)} */}
-                </div> 
-                
 
-                <div className="w-8 h-8 bg-blue-500 text-white font-bold text-center rounded-full">
+              <div className="w-8 h-8 bg-blue-500 text-white font-bold text-center rounded-full">
                    <img src={player.Avatar}/>
-
-                
                 </div> 
                 
-                
+                <td className="py-2">{player.name}</td>
 
+                <div className="w-4 h-4 bg-blue-500 text-white font-bold text-center rounded-full">
+                  {/* {getInitials(player.name)} */}
+                  <img src={player.Avatar}/>
+                </div> 
               </td>
-              <td className="py-2">{player.name}</td>
+
               <td className="py-2 text-right">{player.scoutPoints}</td>
+
             </tr>
           ))}
         </tbody>
