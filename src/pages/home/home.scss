@@ -4,7 +4,7 @@
 
   .homeContainer {
     flex: 6;
- 
+     
 
     .widgets{
       
@@ -15,9 +15,30 @@
         gap: 20px;
       
     }
+
+
     .two-chart{
       display: flex;
       flex-direction: row;
+    }
+
+
+    .ProgressBar-Container 
+    {
+      display: flex;
+      // justify-content: fl;
+      flex-direction: row;
+      // justify-content: space-between;
+
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 20px;
+      
+    }
+
+    .chart-container{
+ flex-direction: column;
     }
     
     .charts {
@@ -27,8 +48,9 @@
       gap: 20px;
     }
 
-    .charts {
+    .charts-card {
       padding: 5px 20px;
+      
     }
 
     .listContainer {
@@ -54,4 +76,24 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+
+
+
+/* Akong  bago na code */
+
+.container {
+  height: 279;
+  width: 757;
+  display: flex;
+  flex-direction: rows;
+}
+
+.card {
+  padding: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 10ox;
+  margin: 10px;
+  background-color: white;
 }

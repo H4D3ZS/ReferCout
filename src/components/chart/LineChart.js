@@ -70,15 +70,13 @@ function LineChart() {
 
 
   return (
-   <div className='App'>
-      <h1>Participation rate trend</h1>
-      
-      
-      <Line
-        data={data}
-        options={options}
-      ></Line>
-   </div>
+    <div className="App">
+      <h1>Participation Rate Trend</h1>
+
+      <div style={{ padding: '120px', width: '100%', maxWidth: '1500px', margin: '0 auto' }}>
+        <Line data={data} options={options} />
+      </div>
+    </div>
   );
 }
 

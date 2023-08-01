@@ -4,10 +4,13 @@ import Navbar from "../../components/navbar/Navbar";
 import "./home.scss";
 import Widget from "../../components/widget/Widget";
 import Featured from "../../components/featured/Featured";
-import Chart from "../../components/chart/Chart";
+import LineWaveChart from "../../components/chart/LineChart";
 import Table from "../../components/table/Table";
 import Barchart from "../../components/chart/BarChart";
 import BarchartRef from "../../components/chart/Barchart2";
+
+import SemiCircularProgress  from "../../components/chart/CircularProgressBar";
+import { LineChart } from "recharts";
 const Home = () => {
   return (
 
@@ -26,25 +29,59 @@ const Home = () => {
           <Widget type="earning" />
           <Widget type="balance" />
         </div>
-        <div className="charts">
+        <div className="charts-card">
           {/* <Featured /> */}
 
          <div className="two-chart"> 
-         <BarchartRef  />
-         <Chart title="Last 6 Months (Revenue)" aspect={2 / 4} />
+
+
+
+        <div className="chart-container">
+
+     
+        <BarchartRef  />
+
+
+
+       <div className="container">
+        <div className="card">
+          <SemiCircularProgress title="Referrals" percentage={66.7} totalEmployee={100} />
+        </div>
+        <div className="card">
+          <LineWaveChart/>
+        </div>
+       </div>
+
+
+
+     
+       
+          </div>
+         
+
+            
         
+
+
+         
+         {/* <Chart title="Last 6 Months (Revenue)" aspect={2 / 4} /> */}
+
+       
          </div>
           
+       
+          {/* <Barchart  />
+          <BarchartRef /> */}
+
          
-          <Barchart  />
-          <BarchartRef />
          
-      
+       
 
 
-        </div>
- 
+        </div> 
+     
         <div className="listContainer">
+      
         
           <div className="listTitle">Latest Transactions</div>
           <Table />
