@@ -44,13 +44,18 @@ const Home = () => {
 
 
        <div className="container">
+
         <div className="card">
           <SemiCircularProgress title="Referrals" percentage={66.7} totalEmployee={100} />
         </div>
         <div className="card">
           <LineWaveChart/>
         </div>
+
+        
+
        </div>
+       
 
 
 
