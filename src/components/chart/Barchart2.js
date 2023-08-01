@@ -59,7 +59,7 @@ function BarChart2() {
     <div className="chart">
       <h1>Referrals vs Hires trend</h1>
 
-      <div style={{ padding: '120px', width: '100%', maxWidth: '1500px', margin: '0 auto' }}>
+      <div style={{ padding: '20px', width: '100%', maxWidth: '1500px', margin: '0 auto' }}>
         <Bar data={data} options={options} />
       </div>
     </div>
