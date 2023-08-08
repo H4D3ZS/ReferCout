@@ -1,127 +1,220 @@
-.home {
-  display: flex;
+// .home {
+//   display: flex;
   
 
-  .homeContainer {
-    flex: 6;
+//   .homeContainer {
+//     flex: 6;
      
 
-    .widgets{
+//     .widgets{
       
-        display: flex;
+//         display: flex;
 
 
-        padding: 20px;
-        gap: 20px;
+//         padding: 20px;
+//         gap: 20px;
       
-    }
+//     }
 
 
-    .two-chart{
-      display: flex;
-      flex-direction: row;
-    }
+//     .two-chart{
+//       display: flex;
+//       flex-direction: row;
+//     }
 
 
-    .barchart-container{
-      display: flex;
-      flex-direction: row;
-    }
+//     .barchart-container{
+//       display: flex;
+//       flex-direction: row;
+//     }
 
-    .ProgressBar-Container 
-    {
-      display: flex;
-      // justify-content: fl;
-      flex-direction: row;
-      // justify-content: space-between;
+//     .ProgressBar-Container 
+//     {
+//       display: flex;
+//       // justify-content: fl;
+//       flex-direction: row;
+//       // justify-content: space-between;
 
-      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-      padding: 20px;
-      margin: 20px;
+//       -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+//       box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+//       padding: 20px;
+//       margin: 20px;
       
-    }
+//     }
 
-    .chart-container{
- flex-direction: column;
-    }
+//     .chart-container{
+//  flex-direction: column;
+//     }
     
-    .charts {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      gap: 20px;
-    }
+//     .charts {
+//       display: flex;
+//       flex-direction: column;
+//       padding: 20px;
+//       gap: 20px;
+//     }
 
-    .charts-card {
-      padding: 5px 20px;
+//     .charts-card {
+//       padding: 5px 20px;
       
       
-    }
+//     }
 
-    .listContainer {
-      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-      padding: 20px;
-      margin: 20px;
+//     .listContainer {
+//       -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+//       box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+//       padding: 20px;
+//       margin: 20px;
 
-      .listTitle {
-        font-weight: 500;
-        color: gray;
-        margin-bottom: 15px;
-      }
-    }
-  }
+//       .listTitle {
+//         font-weight: 500;
+//         color: gray;
+//         margin-bottom: 15px;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+// @media only screen and (max-width: 600px) {
+//   .home {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
+
+
+
+
+// /* Akong  bago na code */
+
+// .container {
+//   height: 20;
+//   width: 757;
+//   display: flex;
+//   // flex-direction: rows;
+// }
+
+// .card {
+//   padding: 10px;
+//   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16);
+//   border-radius: 10ox;
+//   margin: 10px;
+//   background-color: white;
+// }
+
+// // new css
+// .chart1{
+//   width: 757.34px;
+//   height: 551px;
+// }
+// .chart2{
+//   width: 757.34px;
+//   height: 279px;
+// }
+// .chart3{
+//   width: 757.34px;
+//   height: 303px;
+// }
+// .chart4{
+//   width: 757.34px;
+//   height: 446px;
+// }
+// .chart5{
+//   width: 757.34px;
+//   height: 396px;
+// }
+
+
+
+/* Common styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
-
-
-
-@media only screen and (max-width: 600px) {
-  .home {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-
-
-
-/* Akong  bago na code */
-
-.container {
-  height: 20;
-  width: 757;
+/* Dashboard container */
+.dashboard {
   display: flex;
-  // flex-direction: rows;
+}
+
+/* Sidebar styles */
+.sidebar {
+
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+/* Main content styles */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px; /* Adjust margin to make content closer */
+}
+
+.top-cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .card {
+  background-color: #555;
+  color: white;
   padding: 10px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16);
-  border-radius: 10ox;
-  margin: 10px;
-  background-color: white;
+  flex: 1;
+  margin-right: 10px;
 }
 
-// new css
-.chart1{
-  width: 757.34px;
-  height: 551px;
+.content {
+  display: flex;
 }
-.chart2{
-  width: 757.34px;
-  height: 279px;
+
+.container {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
 }
-.chart3{
-  width: 757.34px;
-  height: 303px;
+
+/* Right sidebar styles */
+.right-sidebar {
+  width: 250px;
+  background-color:white;
+  color: #333;
+  padding: 20px;
 }
-.chart4{
-  width: 757.34px;
-  height: 446px;
-}
-.chart5{
-  width: 757.34px;
-  height: 396px;
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar, .right-sidebar {
+    width: 100%;
+  }
+
+  .top-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .main {
+    margin-left: 0; /* Reset margin for small screens */
+  }
+
+  .sidebar {
+    margin-bottom: 10px; /* Adjust margin for small screens */
+  }
 }
