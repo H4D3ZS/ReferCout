@@ -35,12 +35,15 @@ dependencies:
   react:
     specifier: ^17.0.2
     version: 17.0.2
+  react-aspect-ratio:
+    specifier: ^1.1.6
+    version: 1.1.6(react@17.0.2)
   react-chartjs-2:
     specifier: ^5.2.0
     version: 5.2.0(chart.js@4.3.0)(react@17.0.2)
   react-circular-progressbar:
-    specifier: ^2.0.4
-    version: 2.0.4(react@17.0.2)
+    specifier: ^2.1.0
+    version: 2.1.0(react@17.0.2)
   react-dom:
     specifier: ^17.0.2
     version: 17.0.2(react@17.0.2)
@@ -8919,6 +8922,14 @@ packages:
       whatwg-fetch: 3.6.17
     dev: false
 
+  /react-aspect-ratio@1.1.6(react@17.0.2):
+    resolution: {integrity: sha512-A7/x2MqpYelh2fxx6RnRSEcA+rwdfiDK74Ju78xW8EnzSGSopPnCugyKlB+2d6dNP1UzU/SscIslVtqzNZrwyQ==}
+    peerDependencies:
+      react: ^0.14.7 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 17.0.2
+    dev: false
+
   /react-chartjs-2@5.2.0(chart.js@4.3.0)(react@17.0.2):
     resolution: {integrity: sha512-98iN5aguJyVSxp5U3CblRLH67J8gkfyGNbiK3c+l1QI/G4irHMPQw44aEPmjVag+YKTyQ260NcF82GTQ3bdscA==}
     peerDependencies:
@@ -8929,10 +8940,10 @@ packages:
       react: 17.0.2
     dev: false
 
-  /react-circular-progressbar@2.0.4(react@17.0.2):
-    resolution: {integrity: sha512-OfX0ThSxRYEVGaQSt0DlXfyl5w4DbXHsXetyeivmoQrh9xA9bzVPHNf8aAhOIiwiaxX2WYWpLDB3gcpsDJ9oww==}
+  /react-circular-progressbar@2.1.0(react@17.0.2):
+    resolution: {integrity: sha512-xp4THTrod4aLpGy68FX/k1Q3nzrfHUjUe5v6FsdwXBl3YVMwgeXYQKDrku7n/D6qsJA9CuunarAboC2xCiKs1g==}
     peerDependencies:
-      react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+      react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 17.0.2
     dev: false
@@ -10596,8 +10607,8 @@ packages:
     engines: {node: '>=10.4'}
     dev: false
 
-  /webpack-dev-middleware@5.3.3(webpack@5.88.2):
-    resolution: {integrity: sha512-hj5CYrY0bZLB+eTO+x/j67Pkrquiy7kWepMHmUMoPsmcUaeEnQJqFzHJOyxgWlq746/wUuA64p9ta34Kyb01pA==}
+  /webpack-dev-middleware@5.3.4(webpack@5.88.2):
+    resolution: {integrity: sha512-BVdTqhhs+0IfoeAf7EoH5WE+exCmqGerHfDM0IL096Px60Tq2Mn9MAbnaGUe6HiMa41KMCYF19gyzZmBcq/o4Q==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
@@ -10652,7 +10663,7 @@ packages:
       sockjs: 0.3.24
       spdy: 4.0.2
       webpack: 5.88.2
-      webpack-dev-middleware: 5.3.3(webpack@5.88.2)
+      webpack-dev-middleware: 5.3.4(webpack@5.88.2)
       ws: 8.13.0
     transitivePeerDependencies:
       - bufferutil
